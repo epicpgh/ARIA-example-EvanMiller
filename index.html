@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessible Design Co.</title>
+</head>
+<body>
+  <header role="banner" aria-label="Site Header">
+    <h1>Accessible Design Company</h1>
+
+    <h2>Making things for Everyone</h2>
+    <nav role="navigation" aria-label="Main Navigation" >
+      <ul>
+        
+        <li><a href="#main-content" id="main-content">Skip to Content</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+    <section id="about" label for="about-heading">
+      <h2 id="about-heading">About Us</h2>
+      <p>We build inclusive and accessible web solutions for everyone.</p>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Our Services</h2>
+      <ul>
+        <li>Accessible Web Design</li>
+        <li>Consulting</li>
+        <li>Audits</li>
+      </ul>
+    </section>
+  </main>
+
+  <aside role="complementary" aria-label="Related Information">
+    <h2>News</h2>
+    <p>Check out our latest blog post on digital accessibility trends.</p>
+  </aside>
+
+  <footer role="contentinfo" aria-label="Site Footer">
+    <p>&copy; 2025 My Accessible Website</p>
+  </footer>
+</body>
+</html
