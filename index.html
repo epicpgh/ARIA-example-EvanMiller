@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
   <title>Accessible Design Co.</title>
 </head>
 <body>
-  <header role="banner" aria-label="Site Header">
-    <h1>Accessible Design Company</h1>
 
+  <header aria-label="Site Header">
+    <h1>Accessible Design Company</h1>
     <h2>Making things for Everyone</h2>
-    <nav role="navigation" aria-label="Main Navigation" >
+    <nav aria-label="Main Navigation">
       <ul>
-        
-        <li><a href="#main-content" id="main-content">Skip to Content</a></li>
+        <li><a href="#hero">Skip to Content</a></li> 
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main-content" role="main">
-    <section id="about" label for="about-heading">
+  <main id="main-content" aria-label="Main Content">
+    <section id="hero" aria-label="Hero Section">
+      <h2>Welcome to Our Accessible Design Company</h2>
+      <p>We create inclusive digital experiences for everyone.</p>
+      <img src="images/hero-image.jpg" alt="A diverse group of people using technology together" />
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
       <h2 id="about-heading">About Us</h2>
       <p>We build inclusive and accessible web solutions for everyone.</p>
     </section>
@@ -34,15 +40,36 @@
         <li>Audits</li>
       </ul>
     </section>
+
+    <section class="contact-form-section" aria-labelledby="contact-form-heading">
+      <h2 id="contact-form-heading">Reach Out</h2>
+      <p class="contact-form-intro">
+        Curious about something? Complete these fields and "get in touch", as you humans say. 🤙
+      </p>
+
+      <form>
+        <label for="fullname">Full Name</label>
+        <input class="contact-input" id="fullname" type="text" placeholder="Nick Cave" />
+
+        <label for="email">Email</label>
+        <input class="contact-input" id="email" type="email" placeholder="nCave@badseeds.org" />
+
+        <label for="message">Message</label>
+        <textarea class="contact-textarea" id="message" rows="4" cols="50" placeholder="Your message..."></textarea>
+
+        <button class="contact-submit-button" type="submit">Submit Info 🎉</button>
+      </form>
+    </section>
   </main>
 
-  <aside role="complementary" aria-label="Related Information">
+  <aside aria-label="Related Information">
     <h2>News</h2>
     <p>Check out our latest blog post on digital accessibility trends.</p>
   </aside>
 
-  <footer role="contentinfo" aria-label="Site Footer">
+  <footer aria-label="Site Footer">
     <p>&copy; 2025 My Accessible Website</p>
   </footer>
+
 </body>
-</html
+</html>

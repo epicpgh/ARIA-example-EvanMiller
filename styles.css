@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: tan;
+    color: #333333;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    grid-template-areas:
+        "banner banner banner"
+        "navigation main main"
+        "footer footer footer";
+   
+}
+.banner{
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    grid-area: banner;
+
+}
+
+
+.navigation {
+    grid-area: navigation;
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+      background-color: royalblue;
+    }
+    h1 {
+      font-size: 36px;
+    }
+  
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    nav > ul {
+      flex-direction: column;
+    }
+  
+  }
+  
+    
+   h1{
+      border: 5px, solid;
+      display: flex;
+      padding-left:25px;
+      background-color: darkgrey;
+      border-style: double;
+    }
+    
+    nav > ul {
+      display: flex;
+      justify-content: space-around;
+      gap: 15px;
+      list-style-type: none;
+      margin: 0;
+    }
+    
+    .footer-nav {
+      color: midnightblue;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    
+    nav a:hover {
+      color: slateblue;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    
+    #text1 {
+      margin: px;
+      padding-left: 30px;
+      border: 5px solid orange;
+      background-image: linear-gradient(to bottom, lightblue 0%, lightblue 100%), linear-gradient(to bottom, lightgreen 0%, lightgreen 100%);
+      background-clip: content-box, padding-box;
+      outline: 20px solid orangered;
+    }
+    h2{
+      background: gray;
+      border: 1px, solid;
+      margin-top: 100px;
+      margin-bottom: 30px;
+      padding: 25px;
+      border-style: solid;
+    }
+  
+    p{
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  
+  
+    
+    .footer {  
+      position: flex;
+      bottom: 0;
+      right: 50px;
+      height: 40px;
+    }
