@@ -54,9 +54,14 @@ main {
 
 section {
   margin-bottom: 2rem;
+
 }
 
-
+.services{
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
 .contact-form-section form {
   display: flex;
   flex-direction: column;
